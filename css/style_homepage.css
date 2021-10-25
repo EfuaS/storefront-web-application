@@ -1,0 +1,107 @@
+.highlight-word {
+    position: relative;
+    z-index: 0;
+  /* prevent the highlight from breaking since it is horizontal   */
+    white-space: nowrap;
+  }
+  .highlight-word:before {
+      content: '';
+      background: url(https://cdn2.hubspot.net/hubfs/1951809/text-highlight.png?t=1542708765973) no-repeat center center;
+      background-size: 100% auto;
+      width: 108%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      z-index: -1;
+      transform: translate(-3%,0);
+  }
+
+
+.img-size{
+    height: 450px;
+    width: 900px;
+  }
+
+body{
+    background-color: white;
+}
+.jumbotron-color{
+  background-color: white;  
+}
+
+.logo{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+}
+
+.btn {
+    border: none;
+    padding: 18px 58px 18px 19px;
+    text-transform: capitalize;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    background-size: 200%;
+    transition: 0.6s;
+    box-shadow: 0px 7px 21px 0px rgba(140, 81, 235, 0.418);
+    background-image: linear-gradient(to left, #d281da, #d42fda, #ce85d4ee);
+}
+
+.values-sec{
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 4% 2% 0 2%;
+}
+.values-sec .row .v1 {
+  border-left: 4px solid #e23a72b6;
+  height: 150px;
+  margin-left: 5%; 
+  display: inline-block;
+
+}
+
+
+@keyframes animate {
+  0% {
+      background-position: -500%;
+  }
+  100% {
+      background-position: 500%;
+  }
+}
+
+.values-head {
+display: flex;
+}
+
+.values-ele {
+cursor: pointer;
+height: 45px;
+width: 100%;
+border-radius: 10px;
+box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+background: white;
+margin: 5px;
+padding-top: 5px;
+transition: 1s;
+}
+
+.values-ele span {
+width: 0px;
+overflow: hidden;
+transition: 1s;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.6em;
+}
+
+
+
+
+
+
+
+

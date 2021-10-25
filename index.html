@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Storefront - Sign UP</title>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <!-- JQuery CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+        <!-- Font Icon -->
+        <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+        <!-- Main css -->
+        <link rel="stylesheet" href="css/style_index.css">
+        <script src="./js/validate_index.js"></script>
+
+    </head>
+
+    <body>
+        <!-- Sign up form -->
+        <h1>Welcome to The New Smart</h1>
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title lead">Sign up</h2>
+                        <form action="login.php" method="POST" class="register-form" id="register-form">
+                            
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Full Name .. "/>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="tel"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                              <input type="tel" name="tel" id="tel" placeholder="Telephone .. "/>
+                          </div>
+                                <!-- Business Details Section -->
+
+                          <div class="col-md-12">
+                            <h3 class="text-center"><i class="fa fa-phone-square text-primary f-56"></i></h3>
+                            <h3 class="text-center contact-us">Business Details</h3>
+                        </div>
+
+                          <div class="form-group">
+                            <label for="bname"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                            <input type="text" name="bname" id="bname" placeholder="Business Name .. "/>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="breg"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                          <input type="text" name="breg" id="breg" placeholder="Business Registration Number .. "/>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="btax"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                        <input type="text" name="btax" id="btax" placeholder="Business Tax Number .. "/>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="digadd"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                      <input type="text" name="digadd" id="digadd" placeholder="Digital Address .. "/>
+                  </div>
+
+                  <div class="col-md-12">
+                    <h3 class="text-center"><i class="fa fa-phone-square text-primary f-56"></i></h3>
+                    <h3 class="text-center ">Sign Up Credentials</h3>
+                </div>
+                <br>
+                                         <!-- Sign Up  Credentials Section -->
+
+                            
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="psswd1" id="psswd1" placeholder="Create Password"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="psswd2" id="psswd2" placeholder="Confirm password"/>
+                            </div>
+                            
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                                                    <!-- Image next to form -->
+
+                    <div class="signup-image">
+                        <figure>
+                            <img src="./images/signin.jpg" alt="sing up image">
+                        </figure>
+                                             <!-- link to log in page -->
+
+                        <a href="login.php" class="signup-image-link">I have an Account --></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Validation JQuery -->
+        <script src="plugins/jquery-validation-1.19.2/dist/jquery.validate.min.js"></script>
+
+    </body>
+</html>
+
